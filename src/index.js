@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import {robots} from './robots';
+
 
 // Create the root container for your app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Render the Card component
 root.render(
-  <CardList robots={robots} />
+  <App />
 );
 
 // If you want to start measuring performance in your app, pass a function
