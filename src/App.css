@@ -129,3 +129,23 @@ input::placeholder {
 ::-webkit-scrollbar-thumb:hover {
     background: #2d3748;
 }
+
+
+input[type="search"] {
+    border-color: #3a4dc4;
+    color: #2d3748;
+}
+
+input[type="search"]:focus {
+    border-color: #2d3748;
+    box-shadow: 0 0 15px rgba(58, 77, 196, 0.3);
+}
+
+input[type="search"]::placeholder {
+    color: #6b7280;
+}
+
+.placeholder-dark-blue::placeholder {
+    color: #6b7280;
+    opacity: 0.7;
+}
