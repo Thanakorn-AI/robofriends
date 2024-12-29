@@ -49,26 +49,33 @@ input::placeholder {
     color: #6b7280;
 }
 
+
 /* Card list container */
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;  /* Reduced gap between cards */
+    padding: 15px;
     margin: 0 auto;
     max-width: 1200px;
 }
+
 
 /* Individual card styling */
 .card {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;  /* Reduced padding */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     border: 1px solid rgba(58, 77, 196, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: min-content;  /* Allow card to shrink to content */
 }
 
 .card:hover {
@@ -79,22 +86,28 @@ input::placeholder {
 
 .card img {
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;  /* Reduced margin */
     border: 3px solid #3a4dc4;
-    padding: 5px;
+    padding: 4px;  /* Slightly reduced padding */
     background: white;
+    width: 150px;  /* Set fixed width */
+    height: 150px;  /* Set fixed height */
+    object-fit: cover;  /* Ensure image maintains aspect ratio */
 }
 
 .card h2 {
     color: #2d3748;
     font-family: 'Orbitron', sans-serif;
-    margin: 10px 0;
-    font-size: 1.5rem;
+    margin: 5px 0;  /* Reduced margin */
+    font-size: 1.3rem;  /* Slightly smaller font */
+    line-height: 1.2;  /* Tighter line height */
 }
 
 .card p {
     color: #4a5568;
-    font-size: 1.1rem;
+    font-size: 1rem;  /* Slightly smaller font */
+    margin: 5px 0;  /* Reduced margin */
+    line-height: 1.4;  /* Adjusted line height */
 }
 
 /* Responsive design */
